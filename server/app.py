@@ -27,6 +27,7 @@ def create_app():
 
     # Initialize the API and add resources
     api = Api(app)  # Initialize API
+    
     from resources import EpisodeList, EpisodeDetail, GuestList, AppearanceCreate  # Import resources
     # Registering routes
     api.add_resource(EpisodeList, '/episodes')  
